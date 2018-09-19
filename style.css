@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin:  0;
+}
+
+body {
+    background-color: #3E2723;
+    font-family:      'Yatra One', cursive;
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+}
+
+.gameboard {
+    background-color: #795548;
+    display:          flex;
+    flex-wrap:        wrap;
+    width:            960px;
+}
+
+.card {
+    background-color: #AEEA00;
+    color:            #212121;
+    width:            200px;
+    height:           200px;
+    margin:           20px;
+    border-radius:    20px;
+    box-shadow:       2px 7px 26px 0px rgba(0, 0, 0, 0.2);
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    background-image: url('back.png');
+    cursor:           pointer;
+}
+
+.card h1 {
+    display: none;
+    font-size: 40px;
+}
+
+.card.open {
+    background-color: #EEFF41;
+    background-image: none;
+}
+
+.card.open h1 {
+    display: block;
+}
